@@ -1,6 +1,6 @@
 <div align="center">
 
-# 👋 Hi, I'm Piyush Tak
+# 👋 Hi, I'm Piyush Tak.
 
 ### Aspiring AI & ML Engineer · Computer Science Student
 
