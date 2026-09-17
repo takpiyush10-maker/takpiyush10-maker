@@ -7,14 +7,12 @@
     <meta name="keywords" content="Piyush Tak, resume, CV, AI engineer, ML engineer, Python developer">
     <meta name="author" content="Piyush Tak">
     <title>Piyush Tak - Resume</title>
-    
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-
         :root {
             --primary: #007AFF;
             --primary-dark: #0051D5;
@@ -25,7 +23,6 @@
             --text-light: #666666;
             --border: #e0e0e0;
         }
-
         @media (prefers-color-scheme: dark) {
             :root {
                 --bg: #0a0a0a;
@@ -35,11 +32,9 @@
                 --border: #333333;
             }
         }
-
         html {
             scroll-behavior: smooth;
         }
-
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif;
             background: linear-gradient(135deg, var(--bg) 0%, var(--bg-light) 100%);
@@ -51,19 +46,16 @@
             justify-content: center;
             padding: 20px;
         }
-
         .container {
             max-width: 700px;
             width: 100%;
             text-align: center;
         }
-
         /* Header Animation */
         .header {
             animation: slideDown 0.6s ease-out;
             margin-bottom: 40px;
         }
-
         @keyframes slideDown {
             from {
                 opacity: 0;
@@ -74,7 +66,6 @@
                 transform: translateY(0);
             }
         }
-
         .profile-icon {
             width: 120px;
             height: 120px;
@@ -88,7 +79,6 @@
             box-shadow: 0 10px 30px rgba(0, 122, 255, 0.3);
             animation: bounce 2s infinite;
         }
-
         @keyframes bounce {
             0%, 100% {
                 transform: translateY(0);
@@ -97,7 +87,6 @@
                 transform: translateY(-10px);
             }
         }
-
         .name {
             font-size: 48px;
             font-weight: 700;
@@ -105,21 +94,18 @@
             margin-bottom: 12px;
             letter-spacing: -0.5px;
         }
-
         .title {
             font-size: 24px;
             color: var(--primary);
             font-weight: 500;
             margin-bottom: 8px;
         }
-
         .tagline {
             font-size: 16px;
             color: var(--text-light);
             margin-bottom: 40px;
             line-height: 1.8;
         }
-
         /* Stats Section */
         .stats {
             display: grid;
@@ -128,7 +114,6 @@
             margin-bottom: 50px;
             animation: fadeInUp 0.8s ease-out 0.2s both;
         }
-
         @keyframes fadeInUp {
             from {
                 opacity: 0;
@@ -139,7 +124,6 @@
                 transform: translateY(0);
             }
         }
-
         .stat-card {
             background: var(--bg-light);
             padding: 20px;
@@ -147,20 +131,17 @@
             border: 1px solid var(--border);
             transition: all 0.3s;
         }
-
         .stat-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 25px rgba(0, 122, 255, 0.15);
             border-color: var(--primary);
         }
-
         .stat-number {
             font-size: 28px;
             font-weight: 700;
             color: var(--primary);
             margin-bottom: 8px;
         }
-
         .stat-label {
             font-size: 12px;
             color: var(--text-light);
@@ -168,26 +149,22 @@
             font-weight: 600;
             letter-spacing: 0.5px;
         }
-
         /* CTA Button */
         .cta-section {
             animation: fadeInUp 0.8s ease-out 0.4s both;
             margin-bottom: 50px;
         }
-
         .cta-text {
             font-size: 18px;
             color: var(--text-light);
             margin-bottom: 25px;
             font-weight: 500;
         }
-
         .button-wrapper {
             display: flex;
             gap: 15px;
             flex-direction: column;
         }
-
         .btn {
             padding: 16px 40px;
             border-radius: 12px;
@@ -201,7 +178,6 @@
             position: relative;
             overflow: hidden;
         }
-
         .btn::before {
             content: '';
             position: absolute;
@@ -212,42 +188,34 @@
             background: rgba(255, 255, 255, 0.2);
             transition: left 0.3s;
         }
-
         .btn:hover::before {
             left: 100%;
         }
-
-        .btn-primary {
+         btn-primary {
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             color: #ffffff;
             box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
         }
-
         .btn-primary:hover {
             transform: translateY(-2px);
             box-shadow: 0 12px 30px rgba(0, 122, 255, 0.4);
         }
-
         .btn-secondary {
             background: transparent;
             color: var(--primary);
             border: 2px solid var(--primary);
         }
-
         .btn-secondary:hover {
             background: var(--primary);
             color: #ffffff;
         }
-
         .btn-icon {
             margin-left: 8px;
             transition: transform 0.3s;
         }
-
         .btn:hover .btn-icon {
             transform: translateX(3px);
         }
-
         /* Skills Preview */
         .skills-preview {
             background: var(--bg-light);
@@ -258,7 +226,6 @@
             animation: fadeInUp 0.8s ease-out 0.6s both;
             margin-bottom: 40px;
         }
-
         .skills-title {
             font-size: 16px;
             font-weight: 600;
@@ -266,13 +233,11 @@
             margin-bottom: 16px;
             text-align: center;
         }
-
         .skills-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 12px;
         }
-
         .skill-tag {
             background: linear-gradient(135deg, rgba(0, 122, 255, 0.1), rgba(90, 200, 250, 0.1));
             color: var(--primary);
@@ -284,7 +249,6 @@
             border: 1px solid var(--primary);
             border-opacity: 0.3;
         }
-
         /* Social Links */
         .social-links {
             display: flex;
@@ -293,7 +257,6 @@
             margin-bottom: 40px;
             animation: fadeIn 1s ease-out 0.8s both;
         }
-
         .social-btn {
             width: 50px;
             height: 50px;
@@ -308,14 +271,12 @@
             border: 2px solid var(--border);
             transition: all 0.3s;
         }
-
         .social-btn:hover {
             background: var(--primary);
             color: #ffffff;
             transform: translateY(-3px);
             box-shadow: 0 8px 20px rgba(0, 122, 255, 0.3);
         }
-
         /* Footer */
         footer {
             font-size: 12px;
@@ -325,45 +286,36 @@
             padding-top: 20px;
             border-top: 1px solid var(--border);
         }
-
         /* Responsive */
         @media (max-width: 600px) {
             .name {
                 font-size: 36px;
             }
-
             .title {
                 font-size: 18px;
             }
-
             .tagline {
                 font-size: 14px;
             }
-
             .stats {
                 grid-template-columns: 1fr;
             }
-
             .skills-grid {
                 grid-template-columns: 1fr;
             }
-
             .button-wrapper {
                 gap: 12px;
             }
-
             .btn {
                 padding: 14px 30px;
                 font-size: 15px;
             }
-
             .profile-icon {
                 width: 100px;
                 height: 100px;
                 font-size: 48px;
             }
         }
-
         /* Loading Animation */
         .loading {
             display: inline-block;
@@ -374,7 +326,6 @@
             animation: pulse 1.5s infinite;
             margin-left: 8px;
         }
-
         @keyframes pulse {
             0%, 100% {
                 opacity: 1;
@@ -394,7 +345,6 @@
             <p class="title">Aspiring AI & ML Engineer</p>
             <p class="tagline">2nd-Year CS Student | Python & C Programmer | Data Science Enthusiast</p>
         </div>
-
         <!-- Stats -->
         <div class="stats">
             <div class="stat-card">
@@ -414,7 +364,6 @@
                 <div class="stat-label">Delivery Speed</div>
             </div>
         </div>
-
         <!-- Skills Preview -->
         <div class="skills-preview">
             <div class="skills-title">Core Skills</div>
@@ -429,7 +378,6 @@
                 <div class="skill-tag">JavaScript</div>
             </div>
         </div>
-
         <!-- CTA Section -->
         <div class="cta-section">
             <p class="cta-text">Want to know more about me?</p>
@@ -442,7 +390,6 @@
                 </a>
             </div>
         </div>
-
         <!-- Social Links -->
         <div class="social-links">
             <a href="mailto:takpiyush10@gmail.com" class="social-btn" title="Email">✉️</a>
@@ -450,20 +397,17 @@
             <a href="https://github.com/takpiyush1" target="_blank" class="social-btn" title="GitHub">💻</a>
             <a href="tel:+918619872787" class="social-btn" title="Phone">📱</a>
         </div>
-
         <!-- Footer -->
         <footer>
             <p>© 2026 Piyush Tak | Aspiring AI & ML Engineer | Jodhpur, Rajasthan</p>
             <p style="margin-top: 8px;">Built with ❤️ | Free Portfolio</p>
         </footer>
     </div>
-
     <script>
         // Add smooth scroll to top on load
         window.addEventListener('load', () => {
             window.scrollTo(0, 0);
         });
-
         // Add click feedback
         document.querySelectorAll('.btn').forEach(btn => {
             btn.addEventListener('click', function() {
@@ -474,7 +418,6 @@
                 }, 200);
             });
         });
-
         // Analytics (optional)
         document.querySelectorAll('a[target="_blank"]').forEach(link => {
             link.addEventListener('click', () => {
